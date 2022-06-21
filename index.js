@@ -63,7 +63,7 @@ app.post("/users/add", (req, res) => {
     })
 
     /* if no error as been encountered and the new user as been created, the user is notified with the info of their profile*/
-    res.status(200).json(find)
+    res.status(201).json(find)
 })
 
 
@@ -131,7 +131,7 @@ app.post("/tickets/add/:id", (req, res) => {
     })
 
     /* if no error as been encountered and the new ticket as been created, the user is notified with the info of their ticket*/
-    res.status(200).json(find)
+    res.status(201).json(find)
 })
 
 

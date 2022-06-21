@@ -8,8 +8,8 @@ When you create a ticket, a ticketId will be generated, which will help to keep 
 
 ## Locally Available Routes
 
-Gets all users without validation(for testing purpose)
-localhost:3000/users
+## Gets all users without validation(for testing purpose)
+#### localhost:3000/users
 No requested parameters
 
 ## Gets all tickets without validation(for testing purpose)
@@ -17,15 +17,15 @@ No requested parameters
  No requested parameters
 
 ## Gets a single ticket created by the registered user
-  localhost:3000/tickets/single/:ticketId
+####  localhost:3000/tickets/single/:ticketId
   requested parameters = req.params: ticketId && req.body: userId
 
 ## Gets all  booked ticket created by the user requesting it
- localhost:3000/tickets/all
+#### localhost:3000/tickets/all
  requested parameters = req.body: userId
 
 ## Creates a new user
- localhost:3000/users/add
+#### localhost:3000/users/add
  requested parameters:
 req.body: {
   "name": "olatunde authority",
@@ -35,7 +35,7 @@ req.body: {
 }
 
 ## Book new ticket as a registered user
- localhost:3000/tickets/add/userId
+#### localhost:3000/tickets/add/userId
  requested parameters = req.params: userId &&
 req.body: {
    "title": "flight to lagos",
@@ -45,8 +45,9 @@ req.body: {
 }
 
 ## Updated Booked Ticket as a registered user
- localhost:3000/tickets/update/ticketId
+#### localhost:3000/tickets/update/ticketId
  requested parameters = req.params: ticketId && 
+
 req.body: {
    "userId": "Zuri...", (required)
    "title": "flight to lagos", (optional)
@@ -58,11 +59,11 @@ req.body: {
 
 
 ## Delete Booked Ticket as a registered user
- localhost:3000/tickets/delete/ticketId
+#### localhost:3000/tickets/delete/ticketId
  requested parameters = req.params: ticketId && req.body: userId
 
 ## Delete all ticket without validation(for testing purpose)
- localhost:3000/tickets/delete
+#### localhost:3000/tickets/delete
   No requested parameters
 
 ## Task title: Booking Flight API
