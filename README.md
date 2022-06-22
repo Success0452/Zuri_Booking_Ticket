@@ -39,9 +39,7 @@ req.body: {
  requested parameters = req.params: userId &&
 req.body: {
    "title": "flight to lagos",
-   "time": "12pm",
-  "price": 17200,
-  "date": "09-07-2022"
+  "price": 17200
 }
 
 ## Updated Booked Ticket as a registered user
@@ -51,9 +49,7 @@ req.body: {
 req.body: {
    "userId": "Zuri...", (required)
    "title": "flight to lagos", (optional)
-   "time": "12pm", (optional)
-   "price": 17200, (optional)
-   "date": "09-07-2022" (optional)
+   "price": 17200 (optional)
 }
 /* you only update any field you need to */
 

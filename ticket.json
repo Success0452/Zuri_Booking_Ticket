@@ -1,42 +1,26 @@
 [
   {
-    "ticketId": "TK4153",
+    "ticketId": "TK4911",
     "title": "flight to canada",
-    "time": "1pm",
-    "price": 26000,
-    "date": "26-06-2022",
+    "time": "11:24:47 AM",
+    "price": 37000,
+    "date": "6/22/2022",
     "createdBy": "olatunde success"
   },
   {
-    "ticketId": "TK3512",
-    "title": "flight to abuja",
-    "time": "2pm",
-    "price": 36000,
-    "date": "27-06-2022",
+    "ticketId": "TK3979",
+    "title": "flight to nigeria",
+    "time": "11:26:05 AM",
+    "price": 25000,
+    "date": "6/22/2022",
     "createdBy": "olatunde success"
   },
   {
-    "ticketId": "TK3926",
-    "title": "flight to lagos",
-    "time": "3pm",
-    "price": 46000,
-    "date": "28-06-2022",
-    "createdBy": "olatunde success"
-  },
-  {
-    "ticketId": "TK6945",
+    "ticketId": "TK3374",
     "title": "flight to usa",
-    "time": "4pm",
-    "price": 56000,
-    "date": "29-06-2022",
-    "createdBy": "adeoye ayomide"
-  },
-  {
-    "ticketId": "TK3156",
-    "title": "flight to ghana",
-    "time": "5pm",
-    "price": 66000,
-    "date": "30-06-2022",
-    "createdBy": "adeoye ayomide"
+    "time": "11:25:21 AM",
+    "price": 107000,
+    "date": "6/22/2022",
+    "createdBy": "olatunde blessing"
   }
 ]

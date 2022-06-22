@@ -46,7 +46,8 @@ app.post("/users/add", (req, res) => {
         name: name,
         gender: gender,
         age: age,
-        profession: profession
+        profession: profession,
+        createdAt: new Date().toISOString()
     })
 
     /* this covert the users object array into string */
@@ -103,7 +104,7 @@ app.post("/tickets/add/:id", (req, res) => {
     const ticketId = `TK${Math.floor(1000 + Math.random() * 9000)}`
 
     /* this respond to the user if any of the parameters are not provided*/
-    if (!title || !time || !price || !date) {
+    if (!title || !price) {
         return res.status(400).json({ msg: "all parameters are required" })
     }
 
@@ -111,9 +112,9 @@ app.post("/tickets/add/:id", (req, res) => {
     ticket.push({
         ticketId: ticketId,
         title: title,
-        time: time,
+        time: new Date().toLocaleTimeString(),
         price: price,
-        date: date,
+        date: new Date().toLocaleDateString(),
         createdBy: userCheck.name
     })
 
@@ -230,7 +231,7 @@ app.patch("/tickets/update/:ticketId", (req, res) => {
     const { ticketId } = req.params
 
     /* Getting the specified values from the user */
-    const { userId, title, time, price, date } = req.body
+    const { userId, title, price } = req.body
 
     /* 
     this checks through ths users list and validate whether the user 
@@ -266,9 +267,9 @@ app.patch("/tickets/update/:ticketId", (req, res) => {
     /* this gets the current parameter and set it to the new once provided*/
     /* in absence of a new value, the old value is been saved*/
     newTicket.title = title || newTicket.title,
-        newTicket.time = time || newTicket.time,
+        newTicket.time = new Date().toLocaleTimeString(),
         newTicket.price = price || newTicket.price,
-        newTicket.date = date || newTicket.date,
+        newTicket.date = new Date().toLocaleDateString(),
         newTicket.createdBy = userCheck.name || newTicket.createdBy
 
     /* this covert the users object array into string */
