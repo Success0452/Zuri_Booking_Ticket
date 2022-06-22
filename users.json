@@ -14,5 +14,13 @@
     "age": 10,
     "profession": "develop",
     "createdAt": "2022-06-22T10:22:28.411Z"
+  },
+  {
+    "userId": "Zuri9548",
+    "name": "adeoye ayomide",
+    "gender": "male",
+    "age": 150,
+    "profession": "farmer",
+    "createdAt": "2022-06-22T14:31:56.052Z"
   }
 ]
